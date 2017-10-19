@@ -15,10 +15,11 @@ window.onload=function(){
 					}
 				}	
 function End(){
+	var win = document.getElementById("status");
     if(result) {
-        alert("you lost");
+        win.innerHTML=" you lose"
     } else {
-        alert("You win!");
+        win.innerHTML=" you win"
     }
 }
 
