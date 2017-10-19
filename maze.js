@@ -1,11 +1,9 @@
 var result = false;
 window.onload=function(){					
 						var query = document.querySelectorAll(".boundary");	
-						var win = document.getElementById("end");
-						var restart = document.getElementById("start");
-						document.getElementById('start').onmouseover=start;
+						var win = document.getElementById("end");	
+						document.getElementById('start').onclick=Start;
 						win.onmouseover = End;
-						restart.onclick = Start;
 						for(var i =0;i < query.length ; i++){
 							query[i].addEventListener('mouseover',changeColour); 
 							function changeColour(){
